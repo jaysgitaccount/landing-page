@@ -1,0 +1,74 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    /* Storing colours in custom variables */
+    --dark-bg-colour: #1F2937;
+    --main-colour: #F9FAF8;
+    --second-colour: #E5E7EB;
+    --third-colour: #3882F6;
+    --fourth-colour: #1F2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    padding: 20px 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-bg-colour);
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--main-colour);
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--second-colour);
+}
+
+.hero-section {
+    background-color: var(--dark-bg-colour);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main-colour);
+}
+
+.hero-text {
+    font-size: 18px;
+    color: var(--second-colour);
+}
+
+button {
+    padding: 9px 27px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--third-colour);
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+blockquote {
+    background-color: var(--second-colour);
+}
+figcaption {
+    color: var(--fourth-colour);
+}
