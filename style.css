@@ -11,10 +11,27 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 section {
     padding: 0 150px;
+}
+
+.hero-section {
+    background-color: var(--dark-bg-colour);
+}
+
+.info-section,.cta-section {
+    background-color: white;
+}
+
+.quote-section {
+    background-color: var(--second-colour);
+}
+
+.cta-container {
+    background-color: var(--third-colour);
 }
 
 .header {
@@ -40,19 +57,15 @@ section {
     color: var(--second-colour);
 }
 
-.hero-section {
-    background-color: var(--dark-bg-colour);
+.hero-text {
+    font-size: 18px;
+    color: var(--second-colour);
 }
 
 h1 {
     font-size: 48px;
     font-weight: 900;
     color: var(--main-colour);
-}
-
-.hero-text {
-    font-size: 18px;
-    color: var(--second-colour);
 }
 
 button {
