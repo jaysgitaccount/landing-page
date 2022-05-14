@@ -23,7 +23,13 @@ header {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    font-size: 18px;
+    font-weight: 300;
 }
 
 header, footer {
@@ -42,10 +48,13 @@ header, footer {
 
 .info-section {
     background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    text-align: center;
 }
 
 .quote-section {
     background-color: var(--tertiary-colour);
+    color: var(--primary-colour);
 }
 
 .cta-section {
@@ -63,6 +72,25 @@ nav {
     gap: 20px;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--secondary-colour);
+    font-weight: 400;
+}
+
+.hero-section h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-section img {
+    border: 1px solid red;
+    height: 200px;
+    width: 300px;
+}
+
 .header-links a {
     text-decoration: none;
     font-size: 18px;
@@ -74,9 +102,51 @@ nav {
     color: var(--tertiary-colour);
 }
 
-.footer-text {
-    color: var(--secondary-colour);
-    font-weight: 500;
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-section h2 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.info-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.info-container img {
+    border: 3px solid var(--quaternary-colour);
+    border-radius: 15px; /* if image corners aren't clipped, use overflow: hidden; */
+    height: 150px;
+    width: 150px;
+}
+
+.quote-section figure {
+    padding: 0 250px;
+}
+
+.quote-section blockquote {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-section figcaption {
+    margin: 0;
+    color: var(--primary-colour);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: end;
 }
 
 .cta-container {
@@ -91,29 +161,11 @@ nav {
     font-size: 14px;
     font-weight: 700;
     background-color: var(--quaternary-colour);
+    color: var(--secondary-colour);
     border-radius: 6px;
     border: none;
 }
 
 .cta-button-outline {
     border: 2px solid var(--secondary-colour);
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-}
-
-h2 {
-    color: var(--primary-colour);
-    font-size: 30px;
-    font-weight: 700;
-}
-
-blockquote {
-    background-color: var(--tertiary-colour);
-}
-
-figcaption {
-    color: var(--primary-colour);
 }
