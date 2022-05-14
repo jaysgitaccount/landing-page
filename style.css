@@ -1,5 +1,8 @@
 :root {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
     /* Storing colours in custom variables */
     --primary-colour: #1F2937;
     --secondary-colour: #F9FAF8;
@@ -13,34 +16,40 @@ body {
     margin: 0;
 }
 
-section {
-    padding: 0 150px;
-}
-
-.header {
+header {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-colour);
 }
 
-.hero-section {
+footer {
     background-color: var(--primary-colour);
 }
 
-.info-section,.cta-section {
-    background-color: white;
+header, footer {
+    padding: 10px 150px;
+}
+
+.content-section {
+    /* Adding vertical padding to content */
+    padding: 50px 150px;
+}
+
+.hero-section {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
+.info-section {
+    background-color: var(--secondary-colour);
 }
 
 .quote-section {
     background-color: var(--tertiary-colour);
 }
 
-.cta-container {
-    background-color: var(--quaternary-colour);
-}
-
-.footer {
-    background-color: var(--primary-colour);
+.cta-section {
+    color: var(--secondary-colour);
 }
 
 .header-logo {
@@ -49,7 +58,7 @@ section {
     color: var(--secondary-colour);
 }
 
-.header-links {
+nav {
     display: flex;
     gap: 20px;
 }
@@ -65,21 +74,40 @@ section {
     color: var(--tertiary-colour);
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 900;
+.footer-text {
     color: var(--secondary-colour);
+    font-weight: 500;
 }
 
-button {
+.cta-container {
+    background-color: var(--quaternary-colour);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.cta-button, .cta-button-outline {
+    cursor: pointer;
     padding: 9px 27px;
     font-size: 14px;
     font-weight: 700;
-    color: white;
     background-color: var(--quaternary-colour);
-    cursor: pointer;
-    border: none;
     border-radius: 6px;
+    border: none;
+}
+
+.cta-button-outline {
+    border: 2px solid var(--secondary-colour);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    color: var(--primary-colour);
+    font-size: 30px;
+    font-weight: 700;
 }
 
 blockquote {
