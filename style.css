@@ -1,11 +1,10 @@
 :root {
     font-family: "Roboto", sans-serif;
     /* Storing colours in custom variables */
-    --dark-bg-colour: #1F2937;
-    --main-colour: #F9FAF8;
-    --second-colour: #E5E7EB;
-    --third-colour: #3882F6;
-    --fourth-colour: #1F2937;
+    --primary-colour: #1F2937;
+    --secondary-colour: #F9FAF8;
+    --tertiary-colour: #E5E7EB;
+    --quaternary-colour: #3882F6;
 }
 
 body {
@@ -18,8 +17,14 @@ section {
     padding: 0 150px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-colour);
+}
+
 .hero-section {
-    background-color: var(--dark-bg-colour);
+    background-color: var(--primary-colour);
 }
 
 .info-section,.cta-section {
@@ -27,23 +32,21 @@ section {
 }
 
 .quote-section {
-    background-color: var(--second-colour);
+    background-color: var(--tertiary-colour);
 }
 
 .cta-container {
-    background-color: var(--third-colour);
+    background-color: var(--quaternary-colour);
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--dark-bg-colour);
+.footer {
+    background-color: var(--primary-colour);
 }
 
 .header-logo {
     font-size: 24px;
     font-weight: 900;
-    color: var(--main-colour);
+    color: var(--secondary-colour);
 }
 
 .header-links {
@@ -54,18 +57,18 @@ section {
 .header-links a {
     text-decoration: none;
     font-size: 18px;
-    color: var(--second-colour);
+    color: var(--tertiary-colour);
 }
 
 .hero-text {
     font-size: 18px;
-    color: var(--second-colour);
+    color: var(--tertiary-colour);
 }
 
 h1 {
     font-size: 48px;
     font-weight: 900;
-    color: var(--main-colour);
+    color: var(--secondary-colour);
 }
 
 button {
@@ -73,15 +76,16 @@ button {
     font-size: 14px;
     font-weight: 700;
     color: white;
-    background-color: var(--third-colour);
+    background-color: var(--quaternary-colour);
     cursor: pointer;
     border: none;
     border-radius: 6px;
 }
 
 blockquote {
-    background-color: var(--second-colour);
+    background-color: var(--tertiary-colour);
 }
+
 figcaption {
-    color: var(--fourth-colour);
+    color: var(--primary-colour);
 }
