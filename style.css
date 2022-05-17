@@ -46,10 +46,6 @@ footer {
     font-weight: 300;
 }
 
-.content-section {
-    border: 1px solid red;
-}
-
 .hero-section {
     background-color: var(--primary-colour);
     color: var(--secondary-colour);
